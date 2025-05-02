@@ -1,0 +1,105 @@
+/* Utility & Base */
+:root {
+  --color-primary: #2d6cdf;
+  --color-accent: #e8f0ff;
+  --font-main: 'Segoe UI', sans-serif;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-main);
+  line-height: 1.6;
+  background: #fff;
+  color: #333;
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Header */
+.site-header {
+  background: var(--color-primary);
+  color: white;
+  padding: 1rem 0;
+}
+
+.site-header h1 a {
+  color: white;
+  text-decoration: none;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  gap: 1rem;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+}
+
+/* Hero */
+.hero {
+  background: var(--color-accent);
+  padding: 3rem 0;
+  text-align: center;
+}
+
+.hero .btn {
+  background: var(--color-primary);
+  color: white;
+  padding: 0.75rem 1.5rem;
+  text-decoration: none;
+  border-radius: 5px;
+  display: inline-block;
+  margin-top: 1rem;
+}
+
+/* Product Grid */
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+  padding: 3rem 0;
+}
+
+.product-card {
+  border: 1px solid #ccc;
+  padding: 1rem;
+  text-align: center;
+  border-radius: 8px;
+}
+
+.product-card img {
+  width: 100%;
+  max-height: 200px;
+  object-fit: cover;
+}
+
+.affiliate-link {
+  margin-top: 1rem;
+  display: inline-block;
+  background: var(--color-primary);
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+}
+
+/* Footer */
+.site-footer {
+  background: #f4f4f4;
+  padding: 2rem 0;
+  text-align: center;
+  font-size: 0.9rem;
+}
