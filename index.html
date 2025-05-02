@@ -2,9 +2,51 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>My Netlify Site</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="description" content="Top affiliate deals and product reviews.">
+  <link rel="stylesheet" href="styles/main.css" />
+  <title>Best Deals - Affiliate Hub</title>
 </head>
 <body>
-  <h1>Hello from GitHub & Netlify!</h1>
+  <header class="site-header">
+    <div class="container">
+      <h1><a href="/">Affiliate Hub</a></h1>
+      <nav>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Deals</a></li>
+          <li><a href="#">Reviews</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="hero">
+    <div class="container">
+      <h2>Top Affiliate Deals in Tech, Health & Lifestyle</h2>
+      <p>Carefully curated offers with real reviews and smart comparisons.</p>
+      <a class="btn" href="#deals">Browse Deals</a>
+    </div>
+  </main>
+
+  <section id="deals" class="product-grid container">
+    <!-- Example Product -->
+    <div class="product-card">
+      <img src="assets/images/sample.jpg" alt="Product Name" />
+      <h3>Wireless Headphones</h3>
+      <p>Top-rated for sound and comfort.</p>
+      <a href="https://affiliate-link.com" class="btn affiliate-link" target="_blank">Buy Now</a>
+    </div>
+    <!-- Add more product cards below -->
+  </section>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; 2025 Affiliate Hub. As an Amazon Associate, we earn from qualifying purchases.</p>
+    </div>
+  </footer>
+
+  <script src="scripts/main.js"></script>
 </body>
 </html>
